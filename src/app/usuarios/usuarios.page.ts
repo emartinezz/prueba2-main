@@ -18,9 +18,6 @@ export class UsuariosPage implements OnInit {
     public toastController: ToastController) { 
     
   }
-
-  
-
   ngOnInit() {
     this.api.getUsers();
     this.listado = this.api.listado;
