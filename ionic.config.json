@@ -1,0 +1,7 @@
+{
+  "name": "crudStorage",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

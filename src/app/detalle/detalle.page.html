@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title>Comentarios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="comen.length > 0">
+    <ion-list>
+      <div *ngFor="let item of comen" >
+        <ion-item>
+    
+   
+            <ion-avatar slot="start">
+              <img src="https://i.pinimg.com/236x/2a/2e/7f/2a2e7f0f60b750dfb36c15c268d0118d.jpg">
+            </ion-avatar>
+            <ion-label>
+              <h2>{{item.name}}</h2>
+              <p>{{item.body}}</p>
+            </ion-label>
+    
+        </ion-item>
+        <hr>
+      </div>
+    </ion-list>
+  </div>
+</ion-content>
+<ion-toolbar>
+  <ion-button color="dark"(click)="atras()">
+    <ion-icon slot="icon-only" name="arrow-undo-outline"></ion-icon>
+  </ion-button>
+</ion-toolbar>
