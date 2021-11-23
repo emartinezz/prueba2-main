@@ -1,0 +1,51 @@
+.group 			  { 
+  position:relative; 
+  margin-bottom:45px; 
+
+}
+.group2 			  { 
+    position:relative; 
+    top: -26px;
+  
+  }
+input 				{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #000000;
+  background-color: white;
+  color: black;
+  width: 100%;
+  
+}
+input:focus 		{ outline:none; }
+label 				 {
+  color:rgb(7, 7, 7); 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:#000000;
+
+}
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+

@@ -12,18 +12,14 @@
 <br>
 <br>
 <br>
-
-
-  <ion-item>
-    <ion-label position="floating" class="primary-input">Usuario</ion-label>
-    <ion-input #usuario></ion-input>
-  </ion-item>
-
-
-  <ion-item>
-    <ion-label position="floating" class="primary-input">Contraseña</ion-label>
-    <ion-input #clave></ion-input>
-  </ion-item>
+<div class="group">      
+  <input type="text" required #usuario>
+  <label>Usuario</label>
+</div>
+<div class="group2">      
+  <input type="password"  required #clave>
+  <label>Clave</label>
+</div>
   <br>
   <ion-button expand="block"  color="dark" (click)="login(usuario,clave)">Ingresar</ion-button>
 </ion-content>

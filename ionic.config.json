@@ -1,7 +1,8 @@
 {
   "name": "crudStorage",
   "integrations": {
-    "cordova": {}
+    "cordova": {},
+    "capacitor": {}
   },
   "type": "angular"
 }
